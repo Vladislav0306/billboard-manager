@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BillboardManagerLessLimitTest {
-    BillboardManager manager = new BillboardManager();
+    BillboardManager manager = new BillboardManager(20);
     private final Billboard first = new Billboard(1, 1, "Movie1", "action");
     private final Billboard second = new Billboard(2, 2, "Movie2", "action");
     private final Billboard third = new Billboard(3, 3, "Movie3", "action");

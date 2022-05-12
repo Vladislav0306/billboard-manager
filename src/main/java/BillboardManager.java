@@ -71,10 +71,9 @@ public class BillboardManager {
         }
         Billboard[] customFilm = new Billboard[findLast];
         for (int i = 0; i < customFilm.length; i++) {
-            int result = findLast - i - 1;
+            int result = billboardLength - i - 1;
             customFilm[i] = items[result];
         }
         return customFilm;
     }
-
 }
